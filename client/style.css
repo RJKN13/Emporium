@@ -1,0 +1,915 @@
+html {
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  background-color: #080811;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Dosis';
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#container {
+  border-style: solid;
+  border-color: #000000;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  text-align: center;
+  background: white;
+  width: 70%;
+
+  object-fit: cover;
+}
+
+.header_photo {
+  width: 100%;
+}
+
+#login-background {
+  background: #0b132b;
+}
+
+.ge-login>input {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  font-family: 'Dosis';
+  color: antiquewhite;
+}
+
+.ge-login>button {
+  background-color: #efe6ce;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-family: 'Dosis';
+}
+
+
+
+footer {
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+
+}
+
+nav {
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+main {
+  background-color: #A4B2D4;
+  color: white;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.bordertext {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#threeColumns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.borderimg {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+}
+
+.borderimg {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  max-width: 200px;
+  margin: 10px 0px 10px 0px;
+}
+
+
+
+.calendar {
+  border-radius: 10px;
+  background: #39445F;
+  width: calc(100% - 20px);
+  display: flex;
+  padding: 20px;
+  list-style-type: none;
+}
+
+li h2 {
+  margin: 0px 0px 20px 0px;
+
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.magic-show img {
+  width: 100%;
+}
+
+.dancestage img {
+  width: 100%;
+}
+
+.vampireclub img {
+  width: 100%;
+}
+
+.fancy-club img {
+  width: 100%;
+}
+
+.cowboy-club img {
+  width: 100%;
+}
+
+
+
+
+/*Vampire Club*/
+
+.vamwrapper {
+  color: antiquewhite;
+  font-family: 'Poiret One';
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  width: calc(100% - 26px);
+  border: 3px solid #2B2119;
+  padding: 10px;
+}
+
+#vamheader {
+  content: url("img/vamheader.png");
+  width: 100%;
+}
+
+.vampire-login>input {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  font-family: 'Poiret One';
+  color: antiquewhite;
+}
+
+.vampire-login>button {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-family: 'Poiret One';
+}
+
+.vampire-login>button:hover {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+  font-family: 'Poiret One';
+}
+
+.vamcontainer {
+  display: flex;
+  background-color: black;
+}
+
+.vamrow_text {
+  background-color: rgb(0, 0, 0);
+  flex: 50%;
+  height: 400px;
+  overflow: auto;
+  padding-left: 20px;
+}
+
+.vamrow_text::first-letter {
+  initial-letter: 2;
+}
+
+.vamrow_images {
+  background-color: black;
+  flex: 50%;
+
+}
+
+#vamcollage {
+  content: url("img/vamcollage.png");
+  width: 90%;
+  max-height: 500px;
+  justify-self: right;
+}
+
+.vamcalendar {
+  background-color: rgb(0, 0, 0);
+  color: antiquewhite;
+  justify-content: center;
+  max-width: 400px;
+  list-style-type: none;
+}
+
+.vamcalendarInfo {
+  background-color: rgb(0, 0, 0);
+}
+
+.vamrow_text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.vamrow_text::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.vamrow_text::-webkit-scrollbar-thumb {
+  background: darkred;
+}
+
+.vamrow_text::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+
+/* Dance club */
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+
+.dancebody {
+  padding: 5px;
+  background-color: white;
+  border-color: rgb(235, 153, 153);
+  border-style: solid;
+  border-bottom: none;
+  width: calc(100% - 16px);
+}
+
+.danceheader {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+#dancewrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.danceheader>img {
+  width: 85%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 81%;
+  padding-left: 20px;
+}
+
+.intro p {
+  display: flex;
+  font-family: 'Playpen Sans', cursive;
+  padding: 5px;
+  margin: 5px;
+  border-color: rgb(235, 153, 153);
+  border-style: dotted;
+  border-right: none;
+  border-radius: 1%;
+  color: #000000;
+
+}
+
+
+.intro>img {
+  padding: 5px;
+  display: flex;
+  border-radius: 5%;
+  width: 50%;
+}
+
+#dance.calendar {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  background-color: white;
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+  border-top: none;
+  border-radius: 0%;
+  border-left: none;
+  border-right: none;
+}
+
+#dance.calendar h1 {
+  padding-left: 20px;
+}
+
+#dance.calendar_heading {
+  font-size: 26px;
+}
+
+#dance.ul {
+  list-style-type: none;
+
+}
+
+#dance.strong {
+  font-weight: bold;
+}
+
+.ballet {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+  width: 95%;
+}
+
+.ballet iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+#dance.footer {
+  background-color: white;
+  color: black;
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+@media (max-width: 800px) {
+  .danceheader{
+    padding: 0px;
+  }
+
+  .intro{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .intro>img {
+    width: 100%;
+  }
+
+  .intro p {
+    display: flex;
+    font-family: 'Playpen Sans', cursive;
+    padding: 5px;
+    margin: 5px;
+    border-color: rgb(235, 153, 153);
+    border-style: dotted;
+    border-radius: 1%;
+    color: #000000;
+  }
+
+  #dance.calendar {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-style: dotted;
+    border-color: rgb(235, 153, 153);
+    border-top: none;
+    border-radius: 0%;
+    border-left: none;
+    border-right: none;
+  }
+
+  #dance.ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  #dance.calendar h1{
+    margin-top: 0px;
+  }
+}
+
+
+/* Fancy club */
+
+#fancy_club.body {
+  margin: 0px;
+}
+
+
+#fancy_club.main_heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+
+#fancy_club.main_page {
+  display: flex;
+  flex-direction: column;
+}
+
+#fancy_club.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+#fancy_club.right {
+  background-color: darkgray;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#fancy_club.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#fancy_club.input_group {
+  margin-bottom: 15px;
+}
+
+#fancy_club.label {
+  font-weight: bold;
+}
+
+#fancy_club.login_form input[type="text"],
+#fancy_club.login_form input[type="password"] {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#fancy_club.login_button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: darkgray;
+  color: black;
+  cursor: pointer;
+
+}
+
+#fancy_club.login_button:hover {
+  background-color: lightgray;
+}
+
+#fancy_club.club_info {
+  text-align: center;
+  width: 70%;
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#fancy_club.club_info h2 {
+  margin: 0px;
+}
+
+#fancy_club.general_info {
+  font-size: 24px;
+  color: black;
+  margin: 0px;
+}
+
+#fancy_club.calendar {
+  text-align: center;
+  width: 70%;
+  background-color: lightgray;
+  color: black;
+  border-radius: 5px;
+  padding: 0px;
+  flex-direction: column;
+  margin: 20px 0px 20px 0px;
+}
+
+#fancy_club.right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+#fancy_club.calendar h2 {
+  margin: 0px;
+}
+
+#fancy_club.heading_1 {
+  margin: 8px;
+  font-size: 30px;
+}
+
+#fancy_club.fc-ul {
+  margin: 0px;
+  padding: 10px 10px 10px 35px;
+}
+
+#fancy_club.calendar_heading {
+  font-size: 24px;
+  color: black;
+}
+
+#fancy_club.ul {
+  list-style-type: none;
+  padding-left: 0px;
+  color: black;
+}
+
+#fancy_club.strong {
+  font-weight: bold;
+}
+
+#fancy_club.club_photo {
+  width: calc(100% - 60px);
+  height: auto;
+}
+
+#fancy_club.club_photo_2 {
+  width: calc(100% - 40px);
+}
+
+#fancy_club.club_information {
+  width: calc(100% - 60px);
+  margin: 20px 0px 20px 0px;
+}
+
+#fancy_club.footer {
+  height: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#fancy_club.downbar_button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+  #fancy_club.main_page {
+    flex-direction: column;
+  }
+
+  #fancy_club.right {
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #fancy_club.login_form {
+    margin-bottom: 20px;
+  }
+
+  #fancy_club.calendar {
+    margin-bottom: 20px;
+  }
+
+  #fancy_club.club_info {
+    margin-bottom: 20px;
+  }
+
+  #fancy_club.club_photo {
+    width: calc(100% - 40px);
+    height: auto;
+  }
+
+  #fancy_club.main {
+    width: auto;
+  }
+}
+
+/* Magic Show Club CSS */
+
+.ms-main {
+  display: flex;
+  background: url("./img/backgroundPic.jpg");
+}
+
+.ms-middle {
+  background: url("./img/backgroundPic.jpg");
+  width: 70%;
+}
+
+.ms-middlediv {
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.ms-aside {
+  width: 30%;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-style: italic;
+  border: 5px dotted whitesmoke;
+}
+
+.ms-ul {
+  text-align: left;
+}
+
+.ms-ul>li {
+  margin-bottom: 10px;
+}
+
+
+.ms-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-img {
+  align-self: center;
+  height: 130px;
+  width: 130px;
+  border: 5px dotted whitesmoke;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.ms-footer {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  .ms-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ms-middle {
+    width: 100%;
+  }
+
+  .ms-aside {
+    width: 100%;
+  }
+}
+
+/* Cowboy Club */
+
+.cc-body>* {
+  margin: 0;
+  padding: 0;
+}
+
+.cc-body {
+  background-color: #f4e1d2;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.cc-header {
+  background-color: #8d6e63;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+/* sidebar button (left), club-title (center), login (right) --> https://stackoverflow.com/a/66266946*/
+.cc-align {
+  flex: 50px;
+}
+
+.cls-nav {
+  background-color: #8d6e63;
+  height: auto;
+}
+
+.cc-align_middle {
+  align-self: center;
+  text-align: center;
+  top: -80px
+}
+
+.cc-align_right {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.cc-club-title {
+  font-family: 'Rye', cursive;
+  font-weight: normal;
+  font-size: 72px;
+  white-space: nowrap;
+  margin: 10px 0px 10px 0px;
+}
+
+.cc-content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.cc-left-section,
+.cc-right-section,
+.cc-middle-section {
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Wellfleet', cursive;
+  font-size: 16px;
+  color: #5d4037;
+  padding: 20px;
+  background-color: #e0c9b8;
+  /* flex: 1 0 0; */
+  margin-bottom: 20px;
+}
+
+.cc-left-section h2,
+.cc-right-section h1 {
+  font-size: 28px;
+  font-family: 'Wellfleet', cursive;
+  color: #8d6e63;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+.cc-left-section p,
+.cc-left-section h6 {
+  font-size: 16px !important;
+  word-wrap: break-word;
+}
+
+.cc-image-grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.cc-image-item {
+  width: calc(50% - 5px);
+  max-width: 100%;
+  height: auto;
+}
+
+.cc-single-column {
+  width: 100%;
+}
+
+.cc-image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.cc-right-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cc-right-section ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #5d4037;
+  padding-bottom: 10px;
+}
+
+/* FOOTER */
+.cc-footer {
+  position: relative;
+  width: auto;
+  background-color: #8d6e63;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  min-height: 55px;
+}
+
+.cc-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cc-copyright {
+  font-family: 'Wellfleet', cursive;
+  font-size: 16px
+}
+
+@media (max-width: 800px) {
+  .cls-nav {
+    background-color: #8d6e63;
+    width: 100%;
+  }
+
+  .cc-club-title {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  .cc-header {
+    margin-bottom: 20px;
+  }
+}
